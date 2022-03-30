@@ -23,37 +23,6 @@ int main() {
       cin >> kursant.mark[j];
     }
   }
-  // for (int j=0;j<n;j++) {
-  //   for (int i=j;i<n;i++) {
-  //     if(strcmp(kursant[j].inic,kursant[j+1].inic)>0) {
-  //
-  //     }
-  //   }
-  // }
-  for (int i=0;i<n;i++) {
-    cout << i+1 << ") ";
-    cout << "Start: ";
-    cout << group[i].start;
-    cout << "Finish: ";
-    cout << group[i].finish << endl;
-    cout << "Number: ";
-    cout << group[i].number << endl;
-  }
-  cout << "Enter the route number: " << endl;
-  cin >> p;
-  for (int i=0;i<n;i++) {
-    if (group[i].number==p) {
-      cout << "Start: ";
-      cout << group[i].start;
-      cout << "; Finish: ";
-      cout << group[i].finish << endl;
-      cout << "Number: ";
-      cout << group[i].number << endl;
-      count+=1;
-    }
-  }
-  if (count==0) {
-    cout << "Nobody search!" << endl;
-  }
+  
   return 0;
 }
